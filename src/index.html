@@ -3,6 +3,7 @@
 
 <head>
   <title>Bootstrap 4 Layout</title>
+  <!-- SASS is are way to make it pretty and bootstrap is the structure -->
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -54,7 +55,41 @@
         consequat. </p>
 
       <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#exampleModalLong">Learn more</a></button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Poem</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Yam <br>
+                BY BRUCE GUERNSEY<br>
+                The potato that ate all its carrots,
+                can see in the dark like a mole,
+
+                its eyes the scars
+                from centuries of shovels, tines.
+
+                May spelled backwards
+                because it hates the light,
+
+                pawing its way, padding along,
+                there in the catacombs.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </p>
     </div>
     <!--         GRID/FLEXBOX -->
@@ -96,25 +131,25 @@
             aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
-          <!-- Secondary menu -->
-          <div class="col-sm-12 col-md-4">
-            <h3 class="mb-4">Secondary Menu</h3>
+        <!-- Secondary menu -->
+        <div class="col-sm-12 col-md-4">
+          <h3 class="mb-4">Secondary Menu</h3>
 
-            <ul class="nav flex-column nav-pills">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="nav flex-column nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
         <!-- end menu -->
       </div>
 
